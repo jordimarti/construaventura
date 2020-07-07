@@ -1,0 +1,2 @@
+class Missatge < ApplicationRecord
+end

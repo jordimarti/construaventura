@@ -50,3 +50,6 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'devise-i18n', '~> 1.9', '>= 1.9.1'
+gem 'httparty', '~> 0.13.7'

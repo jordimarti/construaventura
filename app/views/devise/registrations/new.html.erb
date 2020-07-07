@@ -1,0 +1,71 @@
+<% 
+paraula = ('a'..'z').to_a.shuffle[0,8].join
+email_inventat = paraula + '@hey.com'
+password_inventat = 'bicicleta'
+%>
+
+
+<div class="row">
+  <div class="col-lg-8 col-md-6">
+    <div class="logo-intro">
+      <%= image_tag("logo_construaventura.png", class: "logo-portada") %>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-8 col-md-6">
+    <div class="inici-sessio-container">
+      <div class="text-intro">
+        <h1>Tenim una missió:<br/><span class="text-gran">Estalviar energia!</span></h1>
+        <br/>
+
+
+        <div class="intro-card">
+          <div class="intro-card-image">
+            <%= image_tag("jordi_aparellador.jpg", class: "jordi-aparellador") %>
+          </div>
+          <div class="intro-card-text">
+            <p class="text-intro-explicacio">En Jordi és arquitecte tècnic i busca gent capaç de millorar els edificis, estalviar energia i així millorar el món.</p>
+          </div>
+        </div>
+        <div class="intro-card">
+          <div class="intro-card-image">
+            <%= image_tag("edifici_aparellador.jpg", class: "edifici-aparellador") %>
+          </div>
+          <div class="intro-card-text">
+            <p class="text-intro-explicacio">Seràs capaç de superar les proves, arribar fins al seu despatx i formar part del seu equip?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div class="inici-sessio-container">
+      <h1 class="text-center">Com et dius?</h1>
+
+      <br/>
+      <br/>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        
+
+        <%= f.hidden_field :email, :value => email_inventat %>
+        <%= f.hidden_field :password, :value => password_inventat %>
+        <%= f.hidden_field :password_confirmation, :value => password_inventat %>
+
+        <div class="form-group">
+          <%= f.text_field :first_name, autofocus: true, class: 'form-control', placeholder: "Nom" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.text_field :last_name, autofocus: true, class: 'form-control', placeholder: "Cognoms" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.submit "Entra", class: "btn btn-aventura btn-block btn-lg" %>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>

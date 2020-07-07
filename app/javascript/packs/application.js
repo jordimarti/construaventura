@@ -19,3 +19,55 @@ require("@fortawesome/fontawesome-free")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+$( function() {
+  $( "#sortable" ).sortable();
+  $( "#sortable" ).disableSelection();
+
+  $( "#material-1" ).draggable();
+  $( "#material-2" ).draggable();
+  $( "#material-3" ).draggable();
+  $( "#material-4" ).draggable();
+  $( "#material-5" ).draggable();
+  $( "#material-6" ).draggable();
+  $( "#material-7" ).draggable();
+  $( "#material-8" ).draggable();
+  $( "#material-9" ).draggable();
+  $( "#material-10" ).draggable();
+  $( "#material-11" ).draggable();
+
+  $( "#casa-material-1" ).droppable({
+    drop: function(event, ui) {
+      $(this).addClass( "material-casa-correcte" );
+    },
+    accept: "#material-10"
+  });
+
+  $( "#casa-material-2" ).droppable({
+    drop: function(event, ui) {
+      $(this).addClass( "material-casa-correcte" );
+    },
+    accept: "#material-6"
+  });
+
+  $( "#casa-material-3" ).droppable({
+    drop: function(event, ui) {
+      $(this).addClass( "material-casa-correcte" );
+    },
+    accept: "#material-8"
+  });
+
+  $( "#casa-material-4" ).droppable({
+    drop: function(event, ui) {
+      $(this).addClass( "material-casa-correcte" );
+    },
+    accept: "#material-7"
+  });
+
+  $( "#casa-material-5" ).droppable({
+    drop: function(event, ui) {
+      $(this).addClass( "material-casa-correcte" );
+    },
+    accept: "#material-9"
+  });
+});
