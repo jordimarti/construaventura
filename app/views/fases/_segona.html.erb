@@ -1,6 +1,9 @@
 <div id="container-fase-2" class="container-fase">
 	<h1 class="titol-repte">On és l'illa de Pasqua?</h1>
 	<p>Passa el ratolí per sobre els requadres per trobar l'illa de Pasqua:</p>
+	<div class="mapa-amagat-illa">
+		<%= image_tag "mapa_mon_48_v2.jpg", class: "map-slice" %>
+	</div>
 	<div class="slice-map-container">
 		<div class="slice-row">
 			<%= image_tag "mapa_mon_01.jpg", class: "map-slice", id: "map1" %>
@@ -76,7 +79,7 @@
 		</div>
 	</div>
 	<div class="slice-row">
-		<p class="benfet2">Correcte!</p>
-		<p class="malfet2">No és correcte</p>
+		<p class="benfet2"><%= image_tag "correcte.png", class: "correcte" %></p>
+		<p class="malfet2"><%= image_tag "nocorrecte.png", class: "nocorrecte" %></p>
 	</div>
 </div>

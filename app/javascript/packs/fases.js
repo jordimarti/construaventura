@@ -92,47 +92,60 @@ $(document).on('turbolinks:load', function () {
 	})
 
 	// Fase 10
+	$('.benfet10').hide()
+	$('.malfet10').hide()
+	
 	$('#container-tria-aventura-2').hide()
 	$('#container-tria-aventura-3').hide()
 	$('#container-tria-aventura-4').hide()
 	$('#container-tria-aventura-5').hide()
 
 	$('#llum-artificial').click(function() {
-		$('#container-tria-aventura-1').hide()
-		$('#container-tria-aventura-2').show()
+		$('#container-tria-aventura-1').delay(3000).fadeOut()
+		$('#container-tria-aventura-2').delay(4000).fadeIn()
+		$('.malfet10').show().delay(3000).fadeOut()
 	})
 	$('#llum-natural').click(function() {
-		$('#container-tria-aventura-1').hide()
-		$('#container-tria-aventura-2').show()
+		$('#container-tria-aventura-1').delay(3000).fadeOut()
+		$('#container-tria-aventura-2').delay(4000).fadeIn()
+		$('.benfet10').show().delay(3000).fadeOut()
 	})
 	$('#nevera-be').click(function() {
-		$('#container-tria-aventura-2').hide()
-		$('#container-tria-aventura-3').show()
+		$('#container-tria-aventura-2').delay(3000).fadeOut()
+		$('#container-tria-aventura-3').delay(4000).fadeIn()
+		$('.benfet10').show().delay(3000).fadeOut()
 	})
 	$('#nevera-malament').click(function() {
-		$('#container-tria-aventura-2').hide()
-		$('#container-tria-aventura-3').show()
+		$('#container-tria-aventura-2').delay(3000).fadeOut()
+		$('#container-tria-aventura-3').delay(4000).fadeIn()
+		$('.malfet10').show().delay(3000).fadeOut()
 	})
 	$('#classe-fred').click(function() {
-		$('#container-tria-aventura-3').hide()
-		$('#container-tria-aventura-4').show()
+		$('#container-tria-aventura-3').delay(3000).fadeOut()
+		$('#container-tria-aventura-4').delay(4000).fadeIn()
+		$('.malfet10').show().delay(3000).fadeOut()
 	})
 	$('#classe-be').click(function() {
-		$('#container-tria-aventura-3').hide()
-		$('#container-tria-aventura-4').show()
+		$('#container-tria-aventura-3').delay(3000).fadeOut()
+		$('#container-tria-aventura-4').delay(4000).fadeIn()
+		$('.benfet10').show().delay(3000).fadeOut()
 	})
 	$('#transport-cotxe').click(function() {
-		$('#container-tria-aventura-4').hide()
-		$('#container-tria-aventura-5').show()
+		$('#container-tria-aventura-4').delay(3000).fadeOut()
+		$('#container-tria-aventura-5').delay(4000).fadeIn()
+		$('.malfet10').show().delay(3000).fadeOut()
 	})
 	$('#transport-bici').click(function() {
-		$('#container-tria-aventura-4').hide()
-		$('#container-tria-aventura-5').show()
+		$('#container-tria-aventura-4').delay(3000).fadeOut()
+		$('#container-tria-aventura-5').delay(4000).fadeIn()
+		$('.benfet10').show().delay(3000).fadeOut()
 	})
 	$('#roba-estesa').click(function() {
-		$('#container-tria-aventura-5').hide()
+		$('#container-tria-aventura-5').delay(3000).fadeOut()
+		$('.benfet10').show().delay(3000).fadeOut()
 	})
 	$('#roba-assecadora').click(function() {
-		$('#container-tria-aventura-5').hide()
+		$('#container-tria-aventura-5').delay(3000).fadeOut()
+		$('.malfet10').show().delay(3000).fadeOut()
 	})
 })
