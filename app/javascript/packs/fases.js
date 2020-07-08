@@ -39,10 +39,16 @@ $(document).on('turbolinks:load', function () {
 	$('#map48').click(function() {
 		$('.malfet2').hide()
 		$('.benfet2').show()
-  })
+	})
+	$('#map48_v2').hide();
   $('#map48').hover(function() {
-  	$('img[id="map48"]').attr('src','/assets/mapa_mon_48_v2.jpg');
-  })
+		$('#map48').hide();
+		$('#map48_v2').show();
+	})
+	$('#map48_v2').click(function() {
+		$('.malfet2').hide()
+		$('.benfet2').show()
+	})
   
   // Fase 3
   
