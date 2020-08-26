@@ -24,7 +24,7 @@
   		<div class="form-xat">
 				<%= form_for @missatge, remote: true do |f| %>
 				  <%= f.hidden_field :user_id, value: current_user.id %>
-				  <div class="form-content">
+				  <div class="form-content missatge-contingut-<%= current_user.id %>">
 				  	<%= f.text_field :contingut, class: 'field-xat' %>
 				  </div>
 				  <div class="form-submit">

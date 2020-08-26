@@ -13,7 +13,7 @@ consumer.subscriptions.create("RoomChannel", {
     // Called when there's incoming data on the websocket for this channel
     if(data.contingut != '') {
     	$('#missatges').append('<div class="missatge" id="'+ data.user_id +'"> <span class="nom-usuari-xat">'+ data.nom +':</span> '+ data.contingut +'</div>')
-	    $('#missatge_contingut').val('')
+	    $('.missatge-contingut-'+data.user_id+' .field-xat').val('')
 	    scroll_bottom()
     }
   }
