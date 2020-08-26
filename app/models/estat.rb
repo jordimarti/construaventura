@@ -1,0 +1,2 @@
+class Estat < ApplicationRecord
+end

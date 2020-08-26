@@ -6,4 +6,8 @@ class HomeController < ApplicationController
     @missatges = Missatge.all
     @video = 'wHiat6z6W00dCJjlnoLnx5Fln2mzR9bnuWRIlHeSjZ01E'
   end
+
+  def espera
+    @estat = Estat.find(1)
+  end
 end

@@ -12,3 +12,20 @@
   	<p><%= link_to "Amagar-ho tot", fases_canvi_fase_path(fase: '0') %></p>
   </div>
 </div>
+
+<div class="row">
+	<div class="col-md-6">
+		<% if @estat.obert == true %>
+			<p>Taller obert</p>
+			<p><%= link_to "Tancar", estats_tancar_path %></p>
+		<% else %>
+			<p>Taller tancat</p>
+			<p><%= link_to "Obrir", estats_obrir_path %></p>
+		<% end %>
+		-----
+
+	</div>
+	<div class="col-md-6">
+
+	</div>
+</div>
