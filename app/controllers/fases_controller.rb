@@ -1,5 +1,4 @@
 class FasesController < ApplicationController
-  layout 'enblanc'
   
   def canvi_fase
     @estat = Estat.find(1)

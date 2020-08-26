@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  get 'estats/update'
   get 'home/espera'
   get 'home/index'
   get 'fases/canvi_fase'
-  get 'estats/obrir'
-  get 'estats/tancar'
+  resources :estats
   resources :missatges
   devise_for :users
   root to: 'home#espera'
