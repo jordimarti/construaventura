@@ -11,6 +11,9 @@ class User < ApplicationRecord
   validates :first_name, :presence => true
   validates :last_name, :presence => true
 
+  has_many :puntuacions, dependent: :destroy
+  has_many :missatges, dependent: :destroy
+
   def self.online
     ids = ActionCable.server.pubsub.redis_connection_for_subscriptions.smembers "online"
     where(id: ids)

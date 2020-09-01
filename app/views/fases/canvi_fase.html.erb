@@ -13,28 +13,25 @@
 
 			<p><%= link_to "Amagar-ho tot", fases_canvi_fase_path(fase: '0') %></p>
 			
-			<hr/>
-
-			<%= form_for @estat do |f| %>
-				<div class="form-content">
-					<% if @estat.obert == true %>
-						<p>Taller obert</p>
-					<% else %>
-						<p>Taller tancat</p>
-					<% end %>
-					<%= f.check_box :obert %><br/>
-					<%= f.text_field :anunci, class: 'field-xat' %>
-				</div>
-				<div class="form-submit">
-					<%= f.submit 'Actualitzar estat', class: 'btn boto-accio' %>
-				</div>
-			<% end %>
 		</div>
 	</div>
 	
 	<div class="col-md-6">
 		<div class="inici-sessio-container">
-			<h2>Com ho estan fent els alumnes?</h2>
+		<%= form_for @estat do |f| %>
+			<div class="form-content">
+				<% if @estat.obert == true %>
+					<p>Taller obert</p>
+				<% else %>
+					<p>Taller tancat</p>
+				<% end %>
+				<%= f.check_box :obert %><br/>
+				<%= f.text_field :anunci, class: 'field-xat' %>
+			</div>
+			<div class="form-submit">
+				<%= f.submit 'Actualitzar estat', class: 'btn boto-accio' %>
+			</div>
+		<% end %>
 		</div>
 	</div>
 </div>

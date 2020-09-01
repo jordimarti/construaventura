@@ -21,6 +21,10 @@ require("@fortawesome/fontawesome-free")
 // const imagePath = (name) => images(name, true)
 
 $( function() {
+  function enviaPuntuacio(fase, correcte) {
+		$.ajax({method: "get", url: "../puntuacions/grava_puntuacio", data: { fase: fase, correcte: correcte }})
+  }
+  
   $( "#sortable" ).sortable();
   $( "#sortable" ).disableSelection();
   
@@ -86,6 +90,7 @@ $( function() {
   function comprovaMaterials(materials_correctes) {
     if (materials_correctes > 4) {
       $('.benfet3').show()
+      enviaPuntuacio(3, true)
     }
     console.log("Materials correctes:")
     console.log(materials_correctes)
@@ -125,6 +130,7 @@ $( function() {
   function comprovaProduccions(produccions_correctes) {
     if (produccions_correctes > 1) {
       $('.benfet7').show()
+      enviaPuntuacio(7, true)
     }
     console.log("Produccions correctes:" + produccions_correctes)
   }

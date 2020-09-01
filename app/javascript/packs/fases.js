@@ -5,6 +5,9 @@ $(document).on('turbolinks:load', function () {
 	$('#amaga-tot').click(function() {
 		$('.container-fase').hide()
 	})
+	function enviaPuntuacio(fase, correcte) {
+		$.ajax({method: "get", url: "../puntuacions/grava_puntuacio", data: { fase: fase, correcte: correcte }})
+	}
 	// Fase 1
 	$('#frase-2').hide()
 	$('.benfet').hide()
@@ -14,18 +17,24 @@ $(document).on('turbolinks:load', function () {
 	  $('#frase-2').show()
 	  $('#pista-1').hide()
 	})
+	
 	$('#comprova-repte-1').click(function() {
 	  valor = $('#input-repte-1').val()
 	  if(valor === 'Per estalviar diners i lluitar contra el canvi climàtic') {
-	    $('.benfet').show()
+			$('.benfet').show()
+			enviaPuntuacio(1, true)
 	  } else if (valor === 'Per estalviar diners i lluitar contra el canvi climatic') {
-	    $('.benfet').show()
+			$('.benfet').show()
+			enviaPuntuacio(1, true)
 	  } else if (valor === 'Per estalviar diners i lluitar contra el canvi climàtic.') {
-	    $('.benfet').show()
+			$('.benfet').show()
+			enviaPuntuacio(1, true)
 	  } else if (valor === 'Per estalviar diners i lluitar contra el canvi climatic.') {
-	    $('.benfet').show()
+			$('.benfet').show()
+			enviaPuntuacio(1, true)
 	  } else {
-	    $('.malfet').show().delay(3000).fadeOut();
+			$('.malfet').show().delay(3000).fadeOut()
+			enviaPuntuacio(1, false)
 	  }
 	})
 
@@ -39,6 +48,7 @@ $(document).on('turbolinks:load', function () {
 	$('#map48').click(function() {
 		$('.malfet2').hide()
 		$('.benfet2').show()
+		enviaPuntuacio(2, true)
 	})
 	$('#map48_v2').hide();
   $('#map48').hover(function() {
@@ -48,6 +58,7 @@ $(document).on('turbolinks:load', function () {
 	$('#map48_v2').click(function() {
 		$('.malfet2').hide()
 		$('.benfet2').show()
+		enviaPuntuacio(2, true)
 	})
   
   // Fase 3
@@ -58,15 +69,18 @@ $(document).on('turbolinks:load', function () {
   $('.malfet4').hide()
   $('#porquets-casa-palla').click(function() {
 		$('.benfet4').hide()
-  	$('.malfet4').show().delay(3000).fadeOut();
+		$('.malfet4').show().delay(3000).fadeOut();
+		enviaPuntuacio(4, false)
   })
   $('#porquets-casa-fusta').click(function() {
 		$('.benfet4').hide()
-  	$('.malfet4').show().delay(3000).fadeOut();
+		$('.malfet4').show().delay(3000).fadeOut();
+		enviaPuntuacio(4, false)
   })
   $('#porquets-casa-maons').click(function() {
 		$('.benfet4').show()
-  	$('.malfet4').hide()
+		$('.malfet4').hide()
+		enviaPuntuacio(4, true)
   })
 
   // Fase 5
@@ -74,11 +88,13 @@ $(document).on('turbolinks:load', function () {
   $('.malfet5').hide()
   $('#tria-manta').click(function() {
 		$('.benfet5').show()
-  	$('.malfet5').hide()
+		$('.malfet5').hide()
+		enviaPuntuacio(5, true)
   })
   $('#tria-estufa').click(function() {
 		$('.benfet5').hide()
-  	$('.malfet5').show().delay(3000).fadeOut();
+		$('.malfet5').show().delay(3000).fadeOut();
+		enviaPuntuacio(5, false)
   })
 
   // Fase 8
@@ -87,13 +103,17 @@ $(document).on('turbolinks:load', function () {
   $('#comprova-repte-8').click(function() {
 	  valor8 = $('#input-repte-8').val()
 	  if(valor8 === 'LES BOMBETES LED CONSUMEIXEN MENYS ENERGIA') {
-	    $('.benfet8').show()
+			$('.benfet8').show()
+			enviaPuntuacio(8, true)
 	  } else if (valor8 === 'Les bombetes led consumeixen menys energia') {
-	    $('.benfet8').show()
+			$('.benfet8').show()
+			enviaPuntuacio(8, true)
 	  } else if (valor8 === 'Les bombetes LED consumeixen menys energia') {
-	    $('.benfet8').show()
+			$('.benfet8').show()
+			enviaPuntuacio(8, true)
 	  } else {
-	    $('.malfet8').show().delay(3000).fadeOut();
+			$('.malfet8').show().delay(3000).fadeOut()
+			enviaPuntuacio(8, false)
 	  }
 	})
 
@@ -110,6 +130,7 @@ $(document).on('turbolinks:load', function () {
 		$('#container-tria-aventura-1').delay(3000).fadeOut()
 		$('#container-tria-aventura-2').delay(4000).fadeIn()
 		$('.malfet10').show().delay(3000).fadeOut()
+		$('.benfet10').hide()
 	})
 	$('#llum-natural').click(function() {
 		$('#container-tria-aventura-1').delay(3000).fadeOut()
