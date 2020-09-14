@@ -111,6 +111,12 @@ $(document).on('turbolinks:load', function () {
 	  } else if (valor8 === 'Les bombetes LED consumeixen menys energia') {
 			$('.benfet8').show()
 			enviaPuntuacio(8, true)
+        } else if (valor8 === 'Les bombetes Led consumeixen menys energia') {
+            $('.benfet8').show()
+            enviaPuntuacio(8, true)
+        } else if (valor8 === 'Les bombetes LED consumeixen menys energia.') {
+            $('.benfet8').show()
+            enviaPuntuacio(8, true)
 	  } else {
 			$('.malfet8').show().delay(3000).fadeOut()
 			enviaPuntuacio(8, false)
