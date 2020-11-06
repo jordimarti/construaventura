@@ -32,6 +32,12 @@ $(document).on('turbolinks:load', function () {
 	  } else if (valor === 'Per estalviar diners i lluitar contra el canvi climatic.') {
 			$('.benfet').show()
 			enviaPuntuacio(1, true)
+    } else if (valor === 'per estalviar diners i lluitar contra el canvi climatic') {
+        $('.benfet').show()
+        enviaPuntuacio(1, true)
+    } else if (valor === 'per estalviar diners i lluitar contra el canvi climatic.') {
+        $('.benfet').show()
+        enviaPuntuacio(1, true)
 	  } else {
 			$('.malfet').show().delay(3000).fadeOut()
 			enviaPuntuacio(1, false)
@@ -111,12 +117,15 @@ $(document).on('turbolinks:load', function () {
 	  } else if (valor8 === 'Les bombetes LED consumeixen menys energia') {
 			$('.benfet8').show()
 			enviaPuntuacio(8, true)
-        } else if (valor8 === 'Les bombetes Led consumeixen menys energia') {
-            $('.benfet8').show()
-            enviaPuntuacio(8, true)
-        } else if (valor8 === 'Les bombetes LED consumeixen menys energia.') {
-            $('.benfet8').show()
-            enviaPuntuacio(8, true)
+    } else if (valor8 === 'Les bombetes Led consumeixen menys energia') {
+        $('.benfet8').show()
+        enviaPuntuacio(8, true)
+    } else if (valor8 === 'Les bombetes LED consumeixen menys energia.') {
+        $('.benfet8').show()
+        enviaPuntuacio(8, true)
+    } else if (valor8 === 'les bombetes led consumeixen menys energia') {
+        $('.benfet8').show()
+        enviaPuntuacio(8, true)
 	  } else {
 			$('.malfet8').show().delay(3000).fadeOut()
 			enviaPuntuacio(8, false)

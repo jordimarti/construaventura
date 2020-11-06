@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   resources :estats
   resources :missatges
   devise_for :users
-  root to: 'home#espera'
+  root to: 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

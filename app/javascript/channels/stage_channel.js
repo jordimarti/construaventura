@@ -47,7 +47,7 @@ consumer.subscriptions.create("StageChannel", {
         $('#container-fase-9').show()
         break;
       case '10':
-        $('#container-fase-8').hide()
+        $('#container-fase-9').hide()
         $('#container-fase-10').show()
         break;
     	default:
