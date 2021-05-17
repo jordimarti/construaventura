@@ -50,6 +50,30 @@ consumer.subscriptions.create("StageChannel", {
         $('#container-fase-9').hide()
         $('#container-fase-10').show()
         break;
+      case '11':
+        $('#container-fase-10').hide()
+        $('#container-fase-11').show()
+        break;
+      case '12':
+        $('#container-fase-11').hide()
+        $('#container-fase-12').show()
+        break;
+      case '13':
+        $('#container-fase-12').hide()
+        $('#container-fase-13').show()
+        break;
+      case '14':
+        $('#container-fase-13').hide()
+        $('#container-fase-14').show()
+        break;
+      case '15':
+        $('#container-fase-14').hide()
+        $('#container-fase-15').show()
+        break;
+      case '16':
+        $('#container-fase-15').hide()
+        $('#container-fase-16').show()
+        break;
     	default:
     		$('.container-interactiu').html("<div>Error</div>")
     }	

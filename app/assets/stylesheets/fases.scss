@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
 .container-fase {
 	padding: 20px;
 }
@@ -558,4 +559,187 @@
 	background-color: #eaeaea;
 	border-radius: 5px;
 	padding: 10px;
+}
+
+
+// FASE 11 - Segon repte de les lletres perdudes
+
+#input-repte-11 {
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+// FASE 12 - Quanta llum necessitem?
+
+.interruptor {
+	float: left;
+}
+
+.interruptor-1 {
+	max-height: 150px;
+}
+
+.interruptor-2 {
+	max-height: 150px;
+}
+
+.instruccions-interruptor {
+	margin-left: 190px;
+	background-color: #eaeaea;
+	padding: 10px 15px;
+}
+
+.cas-iluminacio {
+	color: #00a99d;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.break-float {
+	clear: both;
+}
+
+.llum-aula, .llum-aula2, .llum-aula3{
+	margin-top: 20px;
+	max-width: 570px;
+}
+
+.imatge-classe {
+	position: relative;
+}
+
+.punt-lux-primer {
+	position: absolute;
+	top: 235px;
+	left: 90px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	background-color: white;
+}
+
+.punt-lux-primer:hover {
+	background-color: #00a99d;
+}
+
+.info-lux-primer {
+	position: absolute;
+	top: 195px;
+	left: 60px;
+	background-color: #00a99d;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #333333;
+	padding: 5px 8px;
+}
+
+.punt-lux-segon {
+	position: absolute;
+	top: 280px;
+	left: 350px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	background-color: white;
+}
+
+.punt-lux-segon:hover {
+	background-color: #00a99d;
+}
+
+.info-lux-segon {
+	position: absolute;
+	top: 235px;
+	left: 330px;
+	background-color: #00a99d;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #333333;
+	padding: 5px 8px;
+}
+
+.punt-lux-tercer {
+	position: absolute;
+	top: 250px;
+	left: 470px;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	background-color: white;
+}
+
+.punt-lux-tercer:hover {
+	background-color: #00a99d;
+}
+
+.info-lux-tercer {
+	position: absolute;
+	top: 205px;
+	left: 445px;
+	background-color: #00a99d;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #333333;
+	padding: 5px 8px;
+}
+
+
+// FASE 16 - Seguim les instruccions
+
+.contenidor-imatge {
+	height: 380px;
+}
+
+.imatge-classe2 {
+	position: relative;
+}
+
+.aparells-aula {
+	position: absolute;
+	max-width: 570px;
+}
+
+.contorns-aparells {
+	position: absolute;
+}
+
+#contorn-interruptor {
+	top: 160px;
+	left: 495px;
+	width: 20px;
+	height: 10px;
+}
+
+#contorn-projector {
+	top: 115px;
+	left: 230px;
+	width: 40px;
+	height: 15px;
+}
+
+#contorn-ordinador {
+	top: 176px;
+	left: 180px;
+	width: 15px;
+	height: 25px;
+}
+
+#contorn-pantalla {
+	top: 179px;
+	left: 150px;
+	width: 27px;
+	height: 18px;
+}
+
+#contorn-porta {
+	top: 120px;
+	left: 435px;
+	width: 50px;
+	height: 100px;
 }

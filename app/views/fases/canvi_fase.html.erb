@@ -10,30 +10,20 @@
 			<p><%= link_to "Fase 7", fases_canvi_fase_path(fase: '7') %>: Solar tèrmica o fotovoltaica</p>
 			<p><%= link_to "Fase 8", fases_canvi_fase_path(fase: '8') %>: Puzzle la frase amagada</p>
 			<p><%= link_to "Fase 9", fases_canvi_fase_path(fase: '9') %>: Rehabilitació energètica</p>
+			
 			<p><%= link_to "Fase 10", fases_canvi_fase_path(fase: '10') %>: Tria la teva aventura</p>
+			<p><%= link_to "Fase 11", fases_canvi_fase_path(fase: '11') %>: Una frase amagada</p>
+			<p><%= link_to "Fase 12", fases_canvi_fase_path(fase: '12') %>: Quanta llum necessitem?</p>
+			<p><%= link_to "Fase 13", fases_canvi_fase_path(fase: '13') %>: Memòria prodigiosa</p>
+			<p><%= link_to "Fase 14", fases_canvi_fase_path(fase: '14') %>: Quanta llum necessitem? (2)</p>
+			<p><%= link_to "Fase 15", fases_canvi_fase_path(fase: '15') %>: Quanta llum necessitem? (3)</p>
+			<p><%= link_to "Fase 16", fases_canvi_fase_path(fase: '16') %>: Seguim les instruccions</p>
 
 			<p><%= link_to "Amagar-ho tot", fases_canvi_fase_path(fase: '0') %></p>
 			
 		</div>
 	</div>
 	
-	<div class="col-md-6">
-		<div class="inici-sessio-container">
-		<%= form_for @estat do |f| %>
-			<div class="form-content">
-				<% if @estat.obert == true %>
-					<p>Taller obert</p>
-				<% else %>
-					<p>Taller tancat</p>
-				<% end %>
-				<%= f.check_box :obert %><br/>
-				<%= f.text_field :anunci, class: 'field-xat' %>
-			</div>
-			<div class="form-submit">
-				<%= f.submit 'Actualitzar estat', class: 'btn boto-accio' %>
-			</div>
-		<% end %>
-		</div>
-	</div>
+	
 </div>
 
